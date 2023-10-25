@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PraticaService } from 'src/services/pratica.service';
 import { InputOutputComponent } from './input-output/input-output.component';
+import { InputFixComponent } from './input-fix/input-fix.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InputOutputComponent
+    InputOutputComponent,
+    InputFixComponent
   ],
   imports: [
     BrowserModule,

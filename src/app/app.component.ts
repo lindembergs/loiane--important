@@ -12,6 +12,7 @@ export class AppComponent {
   title = 'services';
   cursos: string[] = [];
   @Input() nomeCurso: string = 'angular';
+  inputFix: string = 'work!';
   constructor(private PraticaService: PraticaService ){
 
     this.cursos = PraticaService.getCursos();
