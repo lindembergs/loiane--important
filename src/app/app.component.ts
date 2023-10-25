@@ -1,3 +1,4 @@
+import { PraticaService } from './../services/pratica.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'services';
+  cursos: string[] = [];
+  constructor(private PraticaService: PraticaService ){
+
+    this.cursos = PraticaService.getCursos();
+
+
+  }
+
+
 }
